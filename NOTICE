@@ -1,0 +1,45 @@
+RheinInsights Bot Gateway for Java
+==================================
+
+Forked from Microsoft's Bot Framework SDK for Java. This project is not
+affiliated with, endorsed by, or supported by Microsoft. "Microsoft",
+"Microsoft Teams", "Azure" and "Bot Framework" are trademarks of Microsoft
+Corporation and are used here only to describe compatibility and origin.
+
+Upstream sources
+----------------
+
+1. Microsoft Bot Framework SDK for Java (botbuilder-java)
+   https://github.com/microsoft/botbuilder-java
+   Copyright (c) Microsoft Corporation. All rights reserved.
+   Licensed under the MIT License.
+   Used in: com.microsoft.bot.*
+
+2. Microsoft Recognizers-Text for Java
+   https://github.com/microsoft/Recognizers-Text
+   Copyright (c) Microsoft Corporation. All rights reserved.
+   Licensed under the MIT License.
+   Used in: com.microsoft.recognizers.*
+
+3. Microsoft Teams samples (bot-teams-authentication, Java)
+   https://github.com/OfficeDev/Microsoft-Teams-Samples
+   Copyright (c) Microsoft Corporation. All rights reserved.
+   Licensed under the MIT License.
+   Used in: com.rheininsights.bot.* (derived)
+
+4. Big List of Naughty Strings
+   https://github.com/minimaxir/big-list-of-naughty-strings
+   Copyright (c) 2015-2020 Max Woolf
+   Licensed under the MIT License.
+   Used in: src/main/resources/naughtyStrings.txt
+
+Modifications by RheinInsights GmbH
+-----------------------------------
+
+Copyright (c) 2025-2026 RheinInsights GmbH. Licensed under the MIT License.
+
+- Upgraded to Java 21 and current versions of third-party dependencies.
+- Removed the Spring Boot integration and Spring bean based configuration in
+  favour of an injected configuration object.
+- Reduced dependencies and removed unused modules and plugins.
+- Reworked URL whitelisting and logging.

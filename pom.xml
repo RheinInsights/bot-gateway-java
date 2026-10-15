@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.rheininsights</groupId>
+    <artifactId>bot-gateway-java</artifactId>
+    <version>1.0.0</version>
+
+    <name>RheinInsights Bot Gateway</name>
+    <description>RheinInsights Bot Gateway for Java. Forked from Microsoft's Bot Framework SDK for Java, with updated dependencies and injected configuration. Not affiliated with or endorsed by Microsoft.</description>
+    <url>https://github.com/RheinInsights/bot-gateway-java</url>
+
+     <!--parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>[3,3.9)</version>
+        <relativePath/>
+    </parent-->
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>RheinInsights GmbH</name>
+            <organization>RheinInsights GmbH</organization>
+            <organizationUrl>https://www.rheininsights.com</organizationUrl>
+        </developer>
+    </developers>
+
+    <properties>
+        <java.version>21</java.version>
+        <maven.compiler.target>21</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+    </properties>
+
+
+    <dependencies>
+<!--dependency>
+      <groupId>org.skyscreamer</groupId>
+      <artifactId>jsonassert</artifactId>
+      <version>1.5.0</version>
+    </dependency-->
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.datatype</groupId>
+      <artifactId>jackson-datatype-jdk8</artifactId>
+	  <version>[2,)</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.datatype</groupId>
+      <artifactId>jackson-datatype-jsr310</artifactId>
+	  <version>[2,)</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.module</groupId>
+      <artifactId>jackson-module-parameter-names</artifactId>
+	  <version>[2,)</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+	  <version>[2,)</version>
+    </dependency>
+
+
+    <!-- to support ms rest consumption -->
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+	  <version>[33,)</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.squareup.retrofit2</groupId>
+      <artifactId>retrofit</artifactId>
+      <version>2.5.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.squareup.retrofit2</groupId>
+      <artifactId>converter-jackson</artifactId>
+      <version>2.5.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.squareup.okhttp3</groupId>
+      <artifactId>okhttp</artifactId>	  
+	  <version>[4,)</version>
+    </dependency>
+    <dependency>
+      <groupId>com.squareup.okhttp3</groupId>
+      <artifactId>logging-interceptor</artifactId>
+	  <version>[4,)</version>
+    </dependency>
+    <dependency>
+      <groupId>com.squareup.okhttp3</groupId>
+      <artifactId>okhttp-urlconnection</artifactId>
+	  <version>[4,)</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>azure-annotations</artifactId>
+      <version>1.7.0</version>
+    </dependency>
+    <!--dependency>
+      <groupId>commons-codec</groupId>
+      <artifactId>commons-codec</artifactId>
+      <version>1.15</version>
+    </dependency-->
+
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>msal4j</artifactId>
+      <version>[1.11.0,)</version>
+    </dependency>
+    <dependency>
+      <groupId>org.javatuples</groupId>
+      <artifactId>javatuples</artifactId>
+      <version>1.2</version>
+    </dependency>
+    <!--dependency>
+      <groupId>org.yaml</groupId>
+      <artifactId>snakeyaml</artifactId>
+      <version>1.32</version>
+    </dependency-->
+
+    <dependency>
+      <groupId>com.auth0</groupId>
+      <artifactId>java-jwt</artifactId>
+	  <version>[4,)</version>
+    </dependency>
+    <dependency>
+      <groupId>com.auth0</groupId>
+      <artifactId>jwks-rsa</artifactId>
+	  <version>[0,)</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+	  <version>[2,)</version>
+    </dependency>
+
+    <!--dependency>
+      <groupId>com.codepoetics</groupId>
+      <artifactId>protonpack</artifactId>
+	  <version>1.16</version>
+    </dependency-->
+    <!--dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <version>[3,3.9)</version>
+    </dependency>
+	      <dependency>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-test</artifactId>
+          <version>[3,3.9)</version>
+          <scope>test</scope>
+      </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot</artifactId>
+      <version>[3,3.9)</version>
+      <scope>compile</scope>
+    </dependency-->
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>[6,)</version>
+    </dependency>
+    <!--dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-beans</artifactId>
+      <version>[6,)</version>
+    </dependency-->
+	<!--dependency>
+      <groupId>com.azure</groupId>
+      <artifactId>azure-storage-blob</artifactId>
+      <version>12.20.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.azure</groupId>
+      <artifactId>azure-storage-queue</artifactId>
+      <version>12.15.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.microsoft.azure</groupId>
+      <artifactId>azure-documentdb</artifactId>
+      <version>2.6.4</version>
+    </dependency-->
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-lang3</artifactId>
+    <version>[3.18.0,)</version>
+</dependency>
+
+      <!--dependency>
+        <groupId>com.microsoft.graph</groupId>
+        <artifactId>microsoft-graph</artifactId>
+        <version>2.9.0</version>
+      </dependency-->
+
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.13.1</version>
+        <scope>test</scope>
+      </dependency>
+	  <dependency>
+  <groupId>com.google.code.findbugs</groupId>
+  <artifactId>jsr305</artifactId>
+  <version>3.0.2</version>
+</dependency>
+
+
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-api</artifactId>
+        <version>2.17.1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-core</artifactId>
+        <version>2.17.1</version>
+      </dependency>
+	  <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+		<version>[1.7,1.8)</version>
+      </dependency>
+
+      <!--dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-to-slf4j</artifactId>
+        <version>2.17.1</version>
+        <scope>test</scope>
+      </dependency-->
+
+      <!--dependency>
+        <groupId>com.microsoft.bot</groupId>
+        <artifactId>bot-integration-spring</artifactId>
+        <version>4.14.1</version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.microsoft.bot</groupId>
+        <artifactId>bot-dialogs</artifactId>
+        <version>4.14.1</version>
+        <scope>compile</scope>
+      </dependency-->
+  </dependencies>
+
+  
+</project>

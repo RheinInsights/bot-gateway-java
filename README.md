@@ -5,10 +5,9 @@ Service channels. Forked from Microsoft's Bot Framework SDK for Java
 ([microsoft/botbuilder-java](https://github.com/microsoft/botbuilder-java)),
 which Microsoft no longer maintains.
 
-> **Not affiliated with Microsoft.** Microsoft doesn't endorse, support or
-> maintain this project. "Microsoft", "Microsoft Teams", "Azure" and "Bot
-> Framework" are trademarks of Microsoft Corporation and appear here only to
-> describe origin and compatibility.
+> Not affiliated with Microsoft. This project is independently maintained by 
+> RheinInsights GmbH and is not endorsed, supported, or maintained by Microsoft. 
+> Microsoft product names are used solely to describe the project's origin and compatibility.
 
 ## Differences from the upstream SDK
 
